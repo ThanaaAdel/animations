@@ -8,7 +8,7 @@ class SlideRight extends PageRouteBuilder {
     transitionsBuilder: (context, animation, animationtwo, child) {
 
       return Align(alignment: Alignment.center,
-          child: SizeTransition(sizeFactor: animation,child: child,));
+          child: FadeTransition(opacity: animation,child: child,));
     },
   );
 }
